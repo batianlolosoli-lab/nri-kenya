@@ -1311,3 +1311,22 @@ img {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   }
 }
+/* --- BALANCED TWO-COLUMN TEXT LAYOUT --- */
+.intro-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* On laptops, spread the two paragraphs into perfect equal side-by-side boxes */
+@media (min-width: 768px) {
+  .intro-text {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Make the "Get to know us" link span nicely across the bottom */
+  .intro-text a.text-link {
+    grid-column: span 2;
+    margin-top: 10px;
+  }
+}
