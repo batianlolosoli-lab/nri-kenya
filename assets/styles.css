@@ -1336,3 +1336,71 @@ img {
   font-weight: 400 !important;
   line-height: 1.6 !important;
 }
+/* --- PREMIUM CONTACT CARD SECTION --- */
+.nri-contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 480px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  scroll-margin-top: 40px;
+}
+
+.nri-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.nri-contact-row:hover {
+  background-color: #fafafa;
+  border-color: #a0a0a0;
+  transform: translateX(4px);
+}
+
+.nri-row-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nri-contact-row .nri-icon {
+  font-size: 1.4rem;
+}
+
+.nri-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nri-text-group label {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: #8c8c8c;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nri-text-group p {
+  margin: 0;
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.nri-arrow {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+}
+
+.nri-contact-row:hover .nri-arrow {
+  color: #1a1a1a;
+}
