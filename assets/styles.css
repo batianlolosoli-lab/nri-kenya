@@ -1330,3 +1330,9 @@ img {
     margin-top: 10px;
   }
 }
+/* FORCE ALL INTRO PARAGRAPHS TO HAVE THE EXACT SAME FONT SIZE AND WEIGHT */
+.intro-text p {
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
